@@ -21,33 +21,45 @@
   </header>
 
   <main>
-    <section id="about-me">
-        <h2>About Me</h2>
-        <p><img src="./assets/Capture.JPG" alt="Profile picture">I'm a product engineer who works on embedded software during the day and a software engineer who develops web applications at night.</p>
-    </section>
+    <section class="content">
+      <section id="about-me">
+          <h2>About Me</h2>
+          <p><img id="profile" src="./assets/profile.JPG" alt="Profile picture">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nobis repudiandae dolores magnam vitae, voluptatem maxime commodi quasi culpa adipisci ea sequi cum repellendus pariatur aspernatur sapiente! Distinctio, quos consequatur.</p>
+      </section>
 
-    <section id="work">
-      <h3>Work</h3>
-      <p>Insert work information here.</p>
-    </section>
+      <section id="work">
+        <h3>Work</h3>
+        <section class="work-card">
+          <div class="card1">
+            <a href="https://github.com/seangshin/refactoring-web-accessibility-project">
+              <img src="./assets/refactoring.JPG" alt="Profile picture">
+            </a>
+          </div>
 
-    <section id="contact">
-      <h4>Contact Me</h2>
-      <form>
-        <ul>
-          <li>
-            <label class="text-right" for="name">Name:</label>
-            <input type="text" id="name" name="user-name">
-          </li>
-          <li>
-            <label class="text-right" for="email">Email:</label>
-            <input type="text" id="email" name="user-email">
-          </li>
-        </ul>
-        <div class="text-center">
-          <button type="submit">SEND</button>
+          <div class="card2">
+           <a href="">
+             <img src="./assets/tbd.JPG" alt="Profile picture">
+           </a>
+          </div>
+
+          <div class="card3">
+          <a href="">
+              <img src="./assets/tbd.JPG" alt="Profile picture">
+            </a>
         </div>
-      </form>
+      </section>
+        
+
+      </section>
+
+      <section id="contact">
+        <h4>Contact Me</h2>
+        <ul class="contact-list">
+          <li>Email: </li>
+          <li>GitHub: </li>
+          <li>LinkedIn: </li>
+        </ul>
+      </section>
     </section>
   </main>
 

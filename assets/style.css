@@ -1,60 +1,47 @@
 /* create custom CSS variables (also called custom properties) and apply them to the root of the page, making them accessible to all other CSS */
 :root {
     /* declare a variable with `--` syntax */
-    --dark-blue: #081731;
-    --light: #fff;
-    --neon-green: #8aeccb;
+    --back: #d7dce4;
+    --text: rgb(55, 54, 149);
+    --back2: #7e7e7e;
   }
 
 /* Universal Selector */
 * {
     margin:0;
     padding:0;  
+    box-sizing: border-box;
   }
   
   /* Element Selectors */
   a {
     text-decoration: none;
     color: #FDF8F5;
+    text-align: center;
   }
 
   body {
-    position: relative;
     font-family: "Garamond";
     font-size: 20px;
-    background-color: var(--dark-blue);
-    color: var(--light);
-  }
-
-  button {
-    height: 40px;
-    width: 120px;
-    background-color: #4F4846;
-    color: #FDF8F5;
+    background-color: var(--back);
+    color: var(--text);
   }
 
   footer {
     margin-top: 0;
     bottom: 0;
-    border-top: 1px solid var(--neon-green);    
-  }
-
-  form {
-    /* Center the form on the page */
-    margin: 0 auto;
-    width: 500px;
-    padding: 10px;
+    border-top: 1px solid var(--back2);    
   }
 
   header {
     display: flex;
     justify-content: space-between;
     position: fixed;
-    border-bottom: 10px solid var(--neon-green);
+    border-bottom: 10px solid var(--back2);
     height: 60px;
     width: 100%;
     line-height: 20px;
-    background-color: var(--dark-blue);
+    background-color: var(--back);
   }
   
   h1 {
@@ -62,32 +49,19 @@
   }
 
   h2, h3, h4 {
-    width: 80px;
-    justify-content: flex-start;
+	  padding: 10px;
     text-align: right;
-    border-right: 4px solid var(--light);
+    border-right: 4px solid var(--text);
     padding: 0px 10px 50px 10px;
-    margin: 10px;
-  }
-
-  input {
-    box-sizing: border-box;
-    width: 300px;
-    border: 1px solid #4F4846;
+    margin: 20px;
   }
 
   img {
-    border-radius: 20%;
     display: block;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 40%;
     padding: 10px;
-  }
-
-  label {
-    display: inline-block;
-    width: 100px;
   }
   
   li {
@@ -101,6 +75,7 @@
   }
 
   nav {
+    background-color: var(--back2);
     display: flex;
     /* Align the child elements to the right side of the parent */
     justify-content: flex-end;
@@ -114,16 +89,10 @@
   
   section {
     display: flex;
-    width: 75%;
+    width: 70%;
     margin: auto;
     padding: 20px 10px 50px 10px;
   }
-  
-  textarea {
-    vertical-align: top;
-    height: 60px;
-  }
-    
    
   /* Class Selectors */
   .text-center {
@@ -133,4 +102,54 @@
   .text-right {
     text-align: right;
   }
+
+  .content {
+    display: block;
+  }
   
+  .contact-list li {
+    margin: 20px;
+    display: block;
+  }
+
+  .work-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex: 1 0 200px;
+  }
+
+  .work-card img{
+    width: 100%;
+  }
+
+  .card1 {
+    width: 100%;
+  }
+  .card2 {
+    width: 50%;
+  }
+  .card3 {
+    width: 50%;
+  }
+
+
+  /* Identifier */
+  #profile {
+    border-radius: 20%;
+  }
+  
+  /* Pseudo Classes */
+  a:hover, a:active, a:focus {
+    opacity: 0.5;
+  }
+
+  /* Media Query at 992px or smaller */
+@media screen and (max-width: 650px) {
+  main,
+  nav, .work-card, header {
+    flex-direction: column;
+  }
+}
+
+
