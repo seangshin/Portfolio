@@ -34,6 +34,8 @@
   }
 
   header {
+
+    /*
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -42,37 +44,29 @@
     width: 100%;
     line-height: 20px;
     background-color: var(--back);
+    */
   }
   
   h1 {
-    margin: 20px;
+    border-right: solid 2px var(--text);
+    border-bottom: solid 2px var(--text);
+    padding-left: 30px;
+    padding-right: 20px;
   }
 
   img {
-    
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-  }
-  
-  li {
-    display: inline;
-    padding: 0px 20px;
-    text-decoration: none;
   }
 
   main {
     padding: 80px 0;
   }
 
-  nav {
-    background-color: var(--back2);
-    display: flex;
-    /* Align the child elements to the right side of the parent */
-    justify-content: flex-end;
-    padding: 10px;
-    text-align: center;
+  p {
+    padding: 50px;
   }
 
   /* Class Selectors */
@@ -81,18 +75,41 @@
     justify-content: center;
   }
 
-  .container-header {
-    flex: 1 1 300px;
+  .container-a {
+    margin-top: 2px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    border-bottom: solid 2px var(--text);
+  }
+
+  .container-div {
+    flex: 1;
+    background-color: var(--back2);
+  }
+
+  .container-h {
+    flex: 1 10 200px;
     text-align: right;
-    border-right: solid 2px var(--text);
+    border-right: solid 3px var(--text);
     padding-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+  }
+
+  .container-header {
+    display: flex;
   }
 
   .container-content {
-    flex: 2 1 600px;
+    flex: 100 1 500px;
     padding-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+  }
+
+  .container-nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--back2);
   }
 
   .first-card{
@@ -112,6 +129,7 @@
   /* Pseudo Classes */
   a:hover, a:active, a:focus {
     opacity: 0.5;
+    border-bottom: none;
   }
 
   /* Media Query at 650px or smaller */
@@ -120,9 +138,33 @@
       flex-wrap: wrap;
     }
 
-    .container-header {
+    .container-a {
+      border-bottom: none;
+      border: solid 2px var(--text);
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-bottom: 0px;
+      padding: 5px;
+    }
+
+    .container-h {
       text-align: center;
-      border-bottom: solid 2px var(--text);
       border-right: none;
+    }
+
+    .container-header {
+      justify-content: center;
+    }
+
+    .container-nav {
+      flex-direction: column;
+    }
+    .container-div {
+      display: none;
+    }
+    h1 {
+      border-right: none;
+      border-bottom: none;
     }
   }
