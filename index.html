@@ -3,55 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./assets/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <title>Portfolio</title>
 </head>
 
 <body>
   <header>
+    <h1>Sean Shin</h1>
     <nav class="text-right">
       <ul>
-        <li> <a href="https://github.com/">About me</a></li>
-        <li> <a href="#my-work">My Work</a></li>
+        <li> <a href="#about-me">About Me</a></li>
+        <li> <a href="#work">Work</a></li>
         <li> <a href="#contact">Contact</a></li>
+        <li> <a href="#resume">Resume</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1 class="text-center">My Portfolio</h1>
+    <img id="profile" src="./assets/images/profile.JPG" alt="Profile picture">
 
-    <section class="about-me">
-        
-        <img src="./assets/Capture.JPG" alt="Profile picture">
-        <h2>Sean Shin</h2>
-        <h3>About Me</h3>
-        <p>I'm a product engineer who works on embedded software during the day and a software engineer who develops web applications at night.</p>
+    <section class="container" id="about-me">
+      <h2 class="container-header">About Me</h2>
+      <div class="container-content">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nobis repudiandae dolores magnam vitae, voluptatem maxime commodi quasi culpa adipisci ea sequi cum repellendus pariatur aspernatur sapiente! Distinctio, quos consequatur.</p>
+      </div>
+      
     </section>
 
-    <section class="my=work" id="my-work">
-
-
-        
+    <section class="container" id="work">
+    <h3 class="container-header">Work</h3>
+    <div class="container-content">
+      <a href="https://github.com/seangshin/refactoring-web-accessibility-project">
+        <img class="first-card" src="./assets/images/refactoring.JPG" alt="Profile picture">
+      </a>
+      <a href="">
+        <img class="other-card" src="./assets/images/tbd.JPG" alt="Profile picture">
+      </a>
+      <a href="">
+          <img class="other-card" src="./assets/images/tbd.JPG" alt="Profile picture">
+      </a>
+    </div>
+    
     </section>
 
-    <section id="contact">
-      <h2 class="text-center">Contact Me</h2>
-      <form>
-        <ul>
-          <li>
-            <label class="text-right" for="name">Name:</label>
-            <input type="text" id="name" name="user-name">
-          </li>
-          <li>
-            <label class="text-right" for="email">Email:</label>
-            <input type="text" id="email" name="user-email">
-          </li>
+    <section class="container" id="contact">
+      <h4 class="container-header">Contact Me</h2>
+      <div class="container-content">
+        <ul class="contact-list">
+          <li>Email: </li>
+          <li>GitHub: </li>
+          <li>LinkedIn: </li>
         </ul>
-        <div class="text-center">
-          <button type="submit">SEND</button>
-        </div>
-      </form>
+      </div>
+      
     </section>
   </main>
 
