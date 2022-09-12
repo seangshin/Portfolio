@@ -12,18 +12,10 @@ The following tools were used for the development and testing of this project. W
 
 Open HTML and CSS code using Code development IDE. Open HTML using Web Browser.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
 
 ## Credits
 
 Georgia Tech Coding Bootcamp instructors, TA's, and other faculty.
 
 ## License
-
-Not applicable
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+Not Applicable
