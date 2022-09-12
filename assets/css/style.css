@@ -1,4 +1,4 @@
-/* create custom CSS variables (also called custom properties) and apply them to the root of the page, making them accessible to all other CSS */
+/* CSS Variables */
 :root {
     /* declare a variable with `--` syntax */
     --back: #d7dce4;
@@ -34,10 +34,15 @@
   }
   
   h1 {
+    font-size: 2em;
     padding-left: 30px;
     padding-right: 20px;
     background-color: var(--back2);
     color: #fff;
+  }
+
+  h2, h3, h4 {
+    font-size: 1.8em;
   }
 
   main {
@@ -46,6 +51,7 @@
   }
 
   p {
+    font-size: 1.3em;
     padding: 50px;
   }
 
@@ -100,6 +106,10 @@
     margin: 5px;
   }
 
+  .icons {
+    width: 10%;
+  }
+
   .images {
     width: 100%;
   }
@@ -131,6 +141,12 @@
 
   /* Media Query at 650px or smaller */
   @media screen and (max-width: 650px) {
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     .container {
       flex-wrap: wrap;
     }
