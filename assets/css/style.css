@@ -73,7 +73,7 @@ p {
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 2px;
-  border-bottom: solid 2px var(--text);
+  border-bottom: solid 2px var(--back);
 }
 
 .container-a1 {
