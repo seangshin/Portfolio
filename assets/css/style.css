@@ -1,128 +1,240 @@
-/* create custom CSS variables (also called custom properties) and apply them to the root of the page, making them accessible to all other CSS */
+/* CSS Variables */
 :root {
-    /* declare a variable with `--` syntax */
-    --back: #d7dce4;
-    --text: rgb(55, 54, 149);
-    --back2: #7e7e7e;
-  }
+  /* declare a variable with `--` syntax */
+  --back: #d7dce4;
+  --text: rgb(105, 104, 211);
+  --back2: #22e6c5;
+  --color1: #ad739a;
+  --color2: #bd7342;
+  --color3: #4090b6;
+  --color4: #268676;
+}
 
 /* Universal Selector */
 * {
-    margin:0;
-    padding:0;  
-    box-sizing: border-box;
-  }
-  
-  /* Element Selectors */
-  a {
-    text-decoration: none;
-    color: #FDF8F5;
-    text-align: center;
-  }
+  margin:0;
+  padding:0;  
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: "Garamond";
-    font-size: 20px;
-    background-color: var(--back);
-    color: var(--text);
-  }
+/* Element Selectors */
+a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #FDF8F5;
+  text-align: center;
+}
 
-  footer {
-    margin-top: 0;
-    bottom: 0;
-    border-top: 1px solid var(--back2);    
-  }
+body {
+  font-family: "Garamond";
+  font-size: 20px;
+  background-color: var(--back);
+  color: var(--text);
+}
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    border-bottom: 10px solid var(--back2);
-    height: 60px;
-    width: 100%;
-    line-height: 20px;
-    background-color: var(--back);
-  }
-  
-  h1 {
-    margin: 20px;
-  }
+footer {
+  margin-top: 0;
+  bottom: 0;
+  border-top: 1px solid var(--back2);    
+}
 
-  img {
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-  }
-  
-  li {
-    display: inline;
-    padding: 0px 20px;
-    text-decoration: none;
-  }
+h1 {
+  font-size: 2.8em;
+  font-weight: bolder;
+  padding-left: 30px;
+  padding-right: 20px;
+  background-color: var(--back2);
+  color: white;
+}
 
-  main {
-    padding: 80px 0;
-  }
+h2, h3, h4, h5 {
+  font-size: 1.8em;
+}
 
-  nav {
-    background-color: var(--back2);
-    display: flex;
-    /* Align the child elements to the right side of the parent */
-    justify-content: flex-end;
-    padding: 10px;
-    text-align: center;
-  }
+main {
+  padding: 80px 0;
+  margin-right: 100px;
+}
 
-  /* Class Selectors */
+p {
+  font-size: 1.3em;
+  padding: 50px;
+}
+
+/* Class Selectors */
+.container {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+}
+
+.container-a1, .container-a2, .container-a3, .container-a4 {
+  margin-top: 2px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 2px;
+  border-bottom: solid 2px var(--back);
+}
+
+.container-a1 {
+  color: var(--color1);
+}
+
+.container-a2 {
+  color: var(--color2);
+}
+
+.container-a3 {
+  color: var(--color3);
+}
+
+.container-a4 {
+  color: var(--color4);
+}
+
+.container-content {
+  flex: 100 1 500px;
+  padding-left: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container-div {
+  flex: 1;
+  background-color: var(--back2);
+}
+
+.container-h {
+  flex: 1 10 280px;
+  text-align: right;
+  border-right: solid 3px var(--text);
+  padding-right: 20px;
+  margin-bottom: 50px;
+}
+
+.container-header {
+  display: flex;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--back2);
+}
+
+.container-content a {
+  margin: 5px;
+}
+
+.icons {
+  width: 10%;
+}
+
+.images {
+  width: 100%;
+}
+
+.image-links {
+  flex: 1 1 200px;
+}
+
+.text-block {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  padding: 5px;
+  bottom: 50px;
+  background-color: var(--text);
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Identifier */
+#about-me {
+  color: var(--color1);
+}
+
+#work {
+  color: var(--color2);
+}
+
+#contact {
+  color: var(--color3);
+}
+
+#resume {
+  color: var(--color4)
+}
+
+#profile {
+  display: block;
+  padding: 10px;
+  border-radius: 20%;
+  margin: auto;
+  width: 20%;
+}
+
+#first-image {
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+#icons {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+/* Pseudo Classes */
+a:hover, a:active, a:focus {
+  opacity: 0.5;
+  border-bottom: none;
+}
+
+/* Media Query at 650px or smaller */
+@media screen and (max-width: 650px) {
   .container {
-    display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .container-a {
+    border-bottom: none;
+    border: solid 2px var(--text);
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding: 5px;
+  }
+
+  .container-h {
+    text-align: center;
+    border-right: none;
   }
 
   .container-header {
-    flex: 1 1 300px;
-    text-align: right;
-    border-right: solid 2px var(--text);
-    padding-right: 20px;
-    margin-bottom: 20px;
+    justify-content: center;
+    background-color: var(--back2);
   }
 
-  .container-content {
-    flex: 2 1 600px;
-    padding-left: 20px;
-    margin-bottom: 20px;
+  .container-nav {
+    flex-direction: column;
+  }
+  .container-div {
+    display: none;
+  }
+  h1 {
+    border-right: none;
+    border-bottom: none;
   }
 
-  .first-card{
-    width: 50%;
-  } 
-
-  .other-card{
-    width: 25%;
-  } 
-
-  /* Identifier */
-  #profile {
-    border-radius: 20%;
-    width: 30%;
+  main {
+    padding: 0;
+    margin-right: 20px;
   }
-
-  /* Pseudo Classes */
-  a:hover, a:active, a:focus {
-    opacity: 0.5;
-  }
-
-  /* Media Query at 650px or smaller */
-  @media screen and (max-width: 650px) {
-    .container {
-      flex-wrap: wrap;
-    }
-
-    .container-header {
-      text-align: center;
-      border-bottom: solid 2px var(--text);
-      border-right: none;
-    }
-  }
+}
