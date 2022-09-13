@@ -108,7 +108,7 @@ p {
 }
 
 .container-h {
-  flex: 1 10 280px;
+  flex: 1 1 280px;
   text-align: right;
   border-right: solid 3px var(--text);
   padding-right: 20px;
@@ -130,7 +130,8 @@ p {
 }
 
 .icons {
-  width: 10%;
+  width: 100%;
+  border-radius: 10%;
 }
 
 .images {
@@ -185,8 +186,12 @@ p {
 }
 
 #icons {
-  align-items: flex-start;
   flex-direction: column;
+  align-items: flex-start;
+}
+
+#icons a {
+  width: 10%;
 }
 
 /* Pseudo Classes */
@@ -236,5 +241,9 @@ a:hover, a:active, a:focus {
   main {
     padding: 0;
     margin-right: 20px;
+  }
+
+  #icons {
+    align-items: center;
   }
 }
