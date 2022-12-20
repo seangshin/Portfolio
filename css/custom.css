@@ -1,0 +1,6 @@
+.card-image-size {
+  float: left;
+    width:  100;
+    height: 100px;
+    object-fit: cover;
+}
