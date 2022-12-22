@@ -8,3 +8,9 @@
 .exp-h {
   font-size: 3em;
 }
+
+.icon {
+  height: 30px;
+  width: 30px;
+  display: block;
+}
