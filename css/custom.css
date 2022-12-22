@@ -10,13 +10,7 @@
 }
 
 .icon {
-  background: url('../assets/zf.JPG');
   height: 30px;
   width: 30px;
   display: block;
-  /* Other styles here */
-}
-
-.container-logo {
-  display: inline-block;
 }
