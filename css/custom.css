@@ -18,3 +18,9 @@
 .business-card {
   font-size: .7em;
 }
+
+.custom-header {
+  color: darkblue;
+  font-family: "Garamond";
+  font-size: 2em;
+}
