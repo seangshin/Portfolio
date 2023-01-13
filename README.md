@@ -5,7 +5,7 @@
 The motivation of this project is to build a web application that showcases my project portfolio. A project portfolio is an essential tool and an effective way to show potential employers and fellow developers your skill set. This activity also engages in the core skills of CSS and how to design creative, responsive webpages. 
 
 ![](assets/images/screenshot.JPG)
-Link to Website: https://seangshin.github.io/portfolio/
+Link to Website: https://seangshin.github.io/Portfolio/
 
 ## Installation
 
